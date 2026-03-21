@@ -26,7 +26,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-24 bg-white/[0.01] border-y border-white/5 relative overflow-hidden" id="beneficios">
+    <section className="py-24 relative overflow-hidden" id="beneficios">
       {/* Decorative Blur */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
       

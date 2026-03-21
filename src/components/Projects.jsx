@@ -38,7 +38,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-24 relative" id="proyectos">
+    <section className="py-24 relative overflow-hidden" id="proyectos">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">

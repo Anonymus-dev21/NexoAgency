@@ -29,7 +29,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 relative" id="servicios">
+    <section className="py-24 relative overflow-hidden" id="servicios">
       <div className="container mx-auto px-6">
         <motion.div className="text-center max-w-2xl mx-auto mb-16"
         initial={{ opacity: 0, x: 50, y: 0 }}

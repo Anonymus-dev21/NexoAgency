@@ -20,7 +20,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-24 relative" id="faq">
+    <section className="py-24 relative overflow-hidden" id="faq">
       {/* Decorative Glow */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[500px] bg-brand-green/8 blur-[100px] pointer-events-none rounded-full" />
       

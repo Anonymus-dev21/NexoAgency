@@ -29,7 +29,7 @@ const Navbar = () => {
           scrolled ? 'bg-[#030014]/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
         }`}
       >
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-2">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center">
