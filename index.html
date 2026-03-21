@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
+    <!-- Preload LCP Hero Image -->
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto,w_800/v1773963913/Fondo_programacion_j7b6p9.webp" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto/v1773963913/Fondo_programacion_j7b6p9.webp" media="(min-width: 769px)" fetchpriority="high" />
+    
+    <!-- Preconnect for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Primary SEO -->
     <title>Nexo – Desarrollo Web & Automatización para tu Negocio</title>
     <meta name="description" content="Creamos tu presencia online y automatizamos los procesos de tu negocio para que puedas enfocarte en lo que realmente importa. Desarrollo web, bots y soluciones a medida." />
     <meta name="keywords" content="desarrollo web, automatización, landing page, bot whatsapp, n8n, integraciones, react, agencia digital, Argentina" />
     <meta name="author" content="Nexo Agency" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://nexoagency.netlify.app/" />
+    <link rel="canonical" href="https://nexogravity.netlify.app/" />
 
     <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nexoagency.netlify.app/" />
+    <meta property="og:url" content="https://nexogravity.netlify.app/" />
     <meta property="og:title" content="Nexo – Desarrollo Web & Automatización para tu Negocio" />
     <meta property="og:description" content="Más clientes. Menos trabajo manual. Creamos tu presencia online o automatizamos tus procesos para que puedas enfocarte en lo que importa." />
     <meta property="og:image" content="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto/v1773963913/Fondo_programacion_j7b6p9.webp" />
@@ -30,14 +37,32 @@
     <meta name="twitter:description" content="Más clientes. Menos trabajo manual. Soluciones digitales a medida para tu negocio." />
     <meta name="twitter:image" content="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto/v1773963913/Fondo_programacion_j7b6p9.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts (Pruned for speed) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Critical CSS (Inlined to avoid FCP/LCP delay) -->
+    <style>
+      :root {
+        --color-brand-red: #E11D48;
+        --color-brand-neon: #FF003C;
+        --color-brand-green: #00FF9D;
+      }
+      body {
+        background-color: #030014;
+        color: #f8fafc;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1.5rem; padding-left: 1.5rem; }
+      @media (min-width: 1280px) { .container { max-width: 1280px; } }
+    </style>
   </head>
   <body>
     <!-- Netlify form detection stub (required for React SPAs) -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>

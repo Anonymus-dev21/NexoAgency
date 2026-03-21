@@ -40,7 +40,7 @@ const Services = () => {
           <h2 className=" md:text-5xl font-bold mb-4 text-white  text-4xl">
             Soluciones que <span className="text-brand-neon">transforman</span>
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             Me enfoco en resolver problemas reales con tecnología moderna, permitiendo que tu equipo se concentre en lo que realmente importa.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ const Services = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>

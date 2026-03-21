@@ -59,6 +59,7 @@ const Navbar = () => {
             <button 
               className="md:hidden text-gray-300 hover:text-white"
               onClick={() => setMobileMenuOpen(true)}
+              aria-label="Abrir menú"
             >
               <Menu className="w-6 h-6" />
             </button>
@@ -79,6 +80,7 @@ const Navbar = () => {
             <button 
               className="absolute top-6 right-6 text-gray-300 hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Cerrar menú"
             >
               <X className="w-8 h-8" />
             </button>

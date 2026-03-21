@@ -11,7 +11,7 @@ const OptimizedImage = ({ src, alt, className, priority = false, ...props }) => 
   const { imgClassName, ...rest } = props;
 
   return (
-    <div ref={ref} className={`relative overflow-hidden ${className}`}>
+    <div ref={ref} className={`relative overflow-hidden aspect-video bg-white/5 ${className}`}>
       {shouldLoad && (
         <motion.img
           src={src}

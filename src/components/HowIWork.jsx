@@ -49,7 +49,7 @@ const HowIWork = () => {
           
           <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Cómo Trabajo</h2>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Un proceso iterativo, transparente y enfocado 100% en generar resultados medibles.
             </p>
           </div>
@@ -75,7 +75,7 @@ const HowIWork = () => {
 
                 <div className="text-center lg:text-left">
                   <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>

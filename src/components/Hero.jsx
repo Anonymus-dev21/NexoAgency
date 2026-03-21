@@ -22,14 +22,22 @@ const Hero = () => {
   return (
     <>
     <div className='WSP FLOATING BUTTON fixed bottom-10 right-12 z-50 hover:translate-y-[-5px] transition-all duration-300 cursor-pointer '>
-      <a href="https://wa.link/n7yvc6" target="_blank" rel="noopener noreferrer" className="w-16 h-16 rounded-xl bg-[#030014] border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-green-400 hover:border-2 transition-all">
+      <a href="https://wa.link/n7yvc6" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" className="w-16 h-16 rounded-xl bg-[#030014] border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-green-400 hover:border-2 transition-all">
        <WhatsappLogoIcon size={46} weight="duotone" className="text-green-400" />
       </a>  
     </div>
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-12 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-neon/20 md:bg-brand-neon/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <img src="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto/v1773963913/Fondo_programacion_j7b6p9.webp" alt="Fondo banner programación." className="absolute top-0 left-0 w-full h-full object-cover" fetchPriority="high" />
+      <picture className="absolute top-0 left-0 w-full h-full">
+        <source media="(max-width: 768px)" srcSet="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto,w_800/v1773963913/Fondo_programacion_j7b6p9.webp" />
+        <img 
+          src="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto/v1773963913/Fondo_programacion_j7b6p9.webp" 
+          alt="Fondo banner programación." 
+          className="w-full h-full object-cover" 
+          fetchPriority="high" 
+        />
+      </picture>
 
       <div className='overlay-black w-full h-full absolute top-0 left-0 z-10 bg-black/50'> </div>
       <div className="container mx-auto px-6 relative z-10">
@@ -63,7 +71,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              className="text-lg md:text-xl text-gray-100 max-w-xl leading-relaxed "
+              className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed "
             >
              Creamos tu presencia online o automatizamos tus procesos para que puedas enfocarte en lo que realmente importa: tu negocio.
             </motion.p>

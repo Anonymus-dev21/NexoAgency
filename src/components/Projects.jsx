@@ -41,10 +41,10 @@ const Projects = () => {
     <section className="py-24 relative" id="proyectos">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Casos de Éxito</h2>
-            <p className="text-gray-400">
-              Transformando procesos complejos en soluciones digitales simples y limpias.
+          <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Casos de éxito</h2>
+            <p className="text-gray-300">
+              Proyectos reales, resultados medibles. Soluciones que impulsaron el crecimiento de mis clientes.
             </p>
           </div>
           <a href="https://github.com/Anonymus-dev21?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -90,10 +90,9 @@ const Projects = () => {
                      <ExternalLink className="w-4 h-4" />
                    </div>
                  </div>
-                 
-                 <p className="text-gray-400 text-sm mb-6 flex-grow">
-                   {project.description}
-                 </p>
+                                  <p className="text-gray-300 text-sm mb-6 flex-grow">
+                    {project.description}
+                  </p>
                  
                  <div className="text-brand-neon text-xs font-semibold tracking-wider">
                    {project.tag}

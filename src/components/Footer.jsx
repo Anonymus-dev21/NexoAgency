@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="#" className="text-2xl font-bold text-white tracking-tighter flex items-center gap-2 mb-4">
               <LogoSVG className="w-32 h-auto" />
             </a>
-            <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
+            <p className="text-gray-300 text-sm max-w-sm leading-relaxed">
               Desarrollo de software y automatización de procesos para negocios que buscan escalar con tecnología.
             </p>
           </div>
@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Enlaces</h4>
             <ul className="space-y-3">
-              <li><a href="#servicios" className="text-gray-400 hover:text-white transition-colors text-sm">Servicios</a></li>
-              <li><a href="#beneficios" className="text-gray-400 hover:text-white transition-colors text-sm">Beneficios</a></li>
-              <li><a href="#proceso" className="text-gray-400 hover:text-white transition-colors text-sm">Proceso</a></li>
-              <li><a href="#proyectos" className="text-gray-400 hover:text-white transition-colors text-sm">Proyectos</a></li>
+              <li><a href="#servicios" className="text-gray-300 hover:text-white transition-colors text-sm">Servicios</a></li>
+              <li><a href="#beneficios" className="text-gray-300 hover:text-white transition-colors text-sm">Beneficios</a></li>
+              <li><a href="#proceso" className="text-gray-300 hover:text-white transition-colors text-sm">Proceso</a></li>
+              <li><a href="#proyectos" className="text-gray-300 hover:text-white transition-colors text-sm">Proyectos</a></li>
             </ul>
           </div>
 
@@ -46,19 +46,19 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Contacto</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:oscab05@utlook.com" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2">
+                <a href="mailto:oscab05@utlook.com" className="text-gray-300 hover:text-white transition-colors text-sm flex items-center gap-2" aria-label="Contactar por email">
                   <Mail className="w-4 h-4" />
                   Contactame por mi email!
                 </a>
               </li>
               <li className="flex gap-4 mt-6">
-                <a href="https://wa.link/n7yvc6" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-brand-neon hover:text-white transition-all">
+                <a href="https://wa.link/n7yvc6" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-brand-neon hover:text-white transition-all">
                   <WhatsAppSVG className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/nexogravity/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-brand-neon hover:text-white transition-all">
+                <a href="https://www.instagram.com/nexogravity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-brand-neon hover:text-white transition-all">
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a href="https://www.tiktok.com/@nexogravity?lang=es-419" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-brand-neon hover:text-white transition-all">
+                <a href="https://www.tiktok.com/@nexogravity?lang=es-419" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-brand-neon hover:text-white transition-all">
                   <TikTokSVG className="w-4 h-4" />
                 </a>
               </li>

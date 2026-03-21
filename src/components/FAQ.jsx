@@ -35,7 +35,7 @@ const FAQ = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
             Preguntas <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-brand-neon italic pr-2">Frecuentes</span>
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-300 text-lg">
             Todo lo que necesitás saber antes de que trabajemos juntos.
           </p>
         </motion.div>

@@ -41,13 +41,10 @@ const CtaFinal = () => {
                   <ChatCircleDotsIcon size={32} />
                 </div>
                 
-                <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-                  Mejoremos tu negocio <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-brand-neon italic pr-2"> juntos</span>
-                </h2>
-                
-                <p className="text-lg text-gray-400">
-                  Ponete en contacto para descubrir cómo la tecnología puede impactar positivamente en tu negocio.
-                </p>
+                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">¿Listo para el próximo nivel?</h2>
+              <p className="text-gray-300 text-lg mb-8">
+                Hablemos sobre tu proyecto y descubramos cómo la tecnología puede impulsar tu crecimiento.
+              </p>
 
                 <div className="pt-8 border-t border-white/5">
                   <h4 className="text-white font-medium mb-6">Conectemos en redes</h4>
@@ -79,7 +76,7 @@ const CtaFinal = () => {
                   <input type="hidden" name="form-name" value="contact" />
                   
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-300">Nombre completo</label>
+                    <label htmlFor="name" className="sr-only">Nombre completo</label>
                     <input 
                       type="text" 
                       id="name"
@@ -91,7 +88,7 @@ const CtaFinal = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-300">Email</label>
+                    <label htmlFor="email" className="sr-only">Email</label>
                     <input 
                       type="email" 
                       id="email"
@@ -103,7 +100,7 @@ const CtaFinal = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-gray-300">¿Cómo puedo ayudarte?</label>
+                    <label htmlFor="message" className="sr-only">¿Cómo puedo ayudarte?</label>
                     <textarea 
                       id="message"
                       name="message" 
