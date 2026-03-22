@@ -64,14 +64,16 @@ const Services = () => {
           </motion.div>
 
           {/* Columna 2: Lista de Servicios */}
-          <div className="flex flex-col gap-6 w-full">
-            {services.map((service, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, x: 50 }}
+          <motion.div className="flex flex-col gap-6 w-full"
+          initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
-                transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            {services.map((service, index) => (
+              <div 
+                key={index}
+                
                 className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-brand-neon/30 transition-colors group relative overflow-hidden"
               >
                 <div className="w-12 h-12 rounded-lg bg-brand-neon/10 text-brand-neon flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
@@ -86,9 +88,9 @@ const Services = () => {
                 
                 {/* Subtle gradient hover effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-neon/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         

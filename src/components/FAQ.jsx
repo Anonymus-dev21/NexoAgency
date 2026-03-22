@@ -5,16 +5,19 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./
 const faqs = [
   {
     question: "¿Cuánto tiempo toma el desarrollo de una solución a medida?",
-    answer: "Depende de la complejidad y alcance del proyecto. Una Landing Page corporativa puede estar lista en 1-2 semanas, mientras que un sistema a medida o automatización de IA completa puede llevar considerablemente más tiempo."
+    answer: "Depende de la complejidad y alcance del proyecto. Una Landing Page corporativa puede estar lista en 1-2 semanas, mientras que un sistema a medida o automatización de IA completa puede llevar considerablemente más tiempo.",
+    delay: 0
   },
   {
     question: "¿Necesito conocimientos técnicos para gestionar el sistema luego?",
-    answer: "No, en absoluto. Todas nuestras soluciones están diseñadas para que sean 100% intuitivas. Además, te brindo soporte inicial para despejar cualquier duda."
+    answer: "No, en absoluto. Todas nuestras soluciones están diseñadas para que sean 100% intuitivas. Además, te brindo soporte inicial para despejar cualquier duda.",
+    delay: 0.3
   },
   
   {
     question: "¿Ofrecen soporte técnico y mantenimiento luego de finalizar el proyecto?",
-    answer: "Sí, ofrezco un periodo de garantía post-lanzamiento para asegurar que todo corra perfecto en el entorno real. Luego, podemos fijar un fee mensual mínimo de mantenimiento y soporte evolutivo si tu proyecto lo requiere."
+    answer: "Sí, ofrezco un periodo de garantía post-lanzamiento para asegurar que todo corra perfecto en el entorno real. Luego, podemos fijar un fee mensual mínimo de mantenimiento y soporte evolutivo si tu proyecto lo requiere.",
+    delay:0.6
   }
 ];
 
@@ -48,8 +51,8 @@ const FAQ = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white/3 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm mb-4"
+                transition={{ duration: 0.5, delay: faq.delay }}
+                className="bg-white/3 border border-white/10 rounded-2xl overflow-hidden  mb-4"
               >
                 <AccordionItem value={`item-${index}`} className="border-b-0 px-6">
                   <AccordionTrigger className="text-left text-lg md:text-xl text-white py-6 hover:text-brand-green transition-colors duration-300">
