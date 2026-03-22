@@ -34,7 +34,7 @@ const Services = () => {
         <motion.div className="text-center max-w-2xl mx-auto mb-16"
         initial={{ opacity: 0, x: 50, y: 0 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
@@ -49,7 +49,7 @@ const Services = () => {
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative w-full h-[400px] lg:h-full lg:min-h-[600px] rounded-2xl overflow-hidden border border-white/5 group"
           >
@@ -67,7 +67,7 @@ const Services = () => {
           <motion.div className="flex flex-col gap-6 w-full"
           initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {services.map((service, index) => (

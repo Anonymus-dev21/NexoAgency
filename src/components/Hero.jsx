@@ -56,13 +56,13 @@ const Hero = () => {
             </motion.div>
 
             <motion.h1 
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.2] overflow-visible"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.2] overflow-visible hero-title"
             >
               Más clientes. <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-10 py-2 inline-block">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-10 py-2 inline-block brand-neon-text">
                 Menos trabajo manual.
               </span>
             </motion.h1>
