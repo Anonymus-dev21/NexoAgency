@@ -41,9 +41,9 @@ const Benefits = () => {
           
           <div className="lg:w-1/2 space-y-8">
             
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white mb-6">
-                Por qué invertir en <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-brand-neon italic pr-2">tecnología</span>
-              </h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+              Por qué <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-2">Elegirnos</span>
+            </h2>
               <p className="text-gray-300 text-lg">
                 El crecimiento de tu negocio no debe depender de sumar más horas de trabajo manual. La tecnología correcta actúa como un multiplicador de tu equipo.
               </p>

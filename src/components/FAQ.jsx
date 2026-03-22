@@ -36,7 +36,7 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-            Preguntas <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-brand-neon italic pr-2">Frecuentes</span>
+            Preguntas <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-2">Frecuentes</span>
           </h2>
           <p className="text-gray-300 text-lg">
             Todo lo que necesitás saber antes de que trabajemos juntos.
@@ -48,11 +48,11 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
+                viewport={{ once: true, amount: 0.3 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-               
                 transition={{ duration: 0.5, delay: faq.delay }}
-                className="bg-white/3 border border-white/10 rounded-2xl overflow-hidden  mb-4"
+                className="bg-white/3 border border-white/10 rounded-2xl overflow-hidden mb-4"
               >
                 <AccordionItem value={`item-${index}`} className="border-b-0 px-6">
                   <AccordionTrigger className="text-left text-lg md:text-xl text-white py-6 hover:text-brand-green transition-colors duration-300">

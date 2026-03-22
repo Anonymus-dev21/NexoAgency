@@ -48,7 +48,9 @@ const HowIWork = () => {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-64 bg-brand-neon/20 blur-[100px] pointer-events-none rounded-full" />
           
           <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Cómo Trabajo</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+              Cómo <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-2">Trabajamos</span>
+            </h2>
             <p className="text-gray-300">
               Un proceso iterativo, transparente y enfocado 100% en generar resultados medibles.
             </p>
@@ -56,7 +58,7 @@ const HowIWork = () => {
 
         <div className="max-w-5xl mx-auto relative cursor-pointer">
           {/* Connecting Line */}
-          <div className="hidden lg:block absolute top-[100px] left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+          <div className="hidden lg:block absolute top-[100px] left-0 w-full h-px bg-linear-to-r from-transparent via-white/20 to-transparent" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {steps.map((step, i) => (

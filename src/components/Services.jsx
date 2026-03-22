@@ -37,9 +37,9 @@ const Services = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className=" md:text-5xl font-bold mb-4 text-white  text-4xl">
-            Soluciones que <span className="text-brand-neon">transforman</span>
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+              Nuestros <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-2">Servicios</span>
+            </h2>
           <p className="text-gray-300">
             Me enfoco en resolver problemas reales con tecnología moderna, permitiendo que tu equipo se concentre en lo que realmente importa.
           </p>
@@ -87,7 +87,7 @@ const Services = () => {
                 </div>
                 
                 {/* Subtle gradient hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-neon/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-br from-brand-neon/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
               </div>
             ))}
           </motion.div>

@@ -28,7 +28,7 @@ const Hero = () => {
     </div>
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-12 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-neon/20 md:bg-brand-neon/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-linear-to-br from-brand-neon/5 via-brand-red/5 to-transparent blur-[150px] pointer-events-none" />
       <picture className="absolute top-0 left-0 w-full h-full">
         <source media="(max-width: 768px)" srcSet="https://res.cloudinary.com/dgaxmhaj2/image/upload/f_auto,q_auto,w_800/v1773963913/Fondo_programacion_j7b6p9.webp" />
         <img 
@@ -62,7 +62,7 @@ const Hero = () => {
               className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.2] overflow-visible"
             >
               Más clientes. <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-brand-neon italic pr-10 py-2 inline-block">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-red to-brand-neon italic pr-10 py-2 inline-block">
                 Menos trabajo manual.
               </span>
             </motion.h1>
@@ -154,7 +154,7 @@ const Hero = () => {
             <motion.div
                animate={{ y: [15, -15, 15], rotate: [0, 5, 0] }}
                transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-               className="absolute -right-10 -bottom-10 w-48 h-48 bg-gradient-to-br from-brand-red/20 to-brand-neon/20 backdrop-blur-3xl border border-white/10 rounded-3xl -z-10 blur-sm"
+               className="absolute -right-10 -bottom-10 w-48 h-48 bg-linear-to-br from-brand-red/20 to-brand-neon/20 backdrop-blur-3xl border border-white/10 rounded-3xl -z-10 blur-sm"
             ></motion.div>
           </motion.div>
         </div>

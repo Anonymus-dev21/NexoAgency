@@ -75,7 +75,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[60] bg-[#030014] flex flex-col items-center justify-center [transform:translateZ(0)]"
+            className="fixed inset-0 z-60 bg-[#030014] flex flex-col items-center justify-center transform-[translateZ(0)]"
           >
             <button 
               className="absolute top-6 right-6 text-gray-300 hover:text-white"

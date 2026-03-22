@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#030014] pt-20 pb-8 relative z-10 overflow-hidden">
       {/* Top glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-32 bg-brand-red/10 blur-[80px] pointer-events-none rounded-full" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-linear-to-br from-brand-neon/10 via-transparent to-transparent blur-[120px] pointer-events-none rounded-full" />
       {/* Gradient separator at the top */}
       <div className="w-full h-px bg-linear-to-r from-transparent via-brand-red/50 to-transparent mb-16" />
       <div className="container mx-auto px-6">
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         {/* Gradient separator before bottom bar */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
+        <div className="w-full h-px bg-linear-to-r from-transparent via-white/10 to-transparent mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-500">
             &copy; {new Date().getFullYear()} Nexo. Todos los derechos reservados.
